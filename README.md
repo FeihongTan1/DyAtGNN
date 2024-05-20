@@ -1,4 +1,11 @@
 # DyAtGNN
 DyAtGNN: Dynamic Attention Graph Neural Networks for Dynamic Graph
-# How to run this experiments:
-python3 -u dyngesn.py --data $data --units 32 16 8 --sigma 0.9 0.5 0.1 --leakage 0.9 0.5 0.1 --lr 0.01 0.001 0.0001 --wd 0.001 0.0001 --batch $batch
+This repository contains implementations for the DyAtGNN paper.
+
+### How to get the preprocessed datasets
+Please see the `./data/dataset_preprocess.py` with all the datasets in paper.
+
+### How to run this experiments:
+```bash
+python3 train.py --data $data --batch 10 --units 32  --lr 0.001 --wd 0.0001
+```
